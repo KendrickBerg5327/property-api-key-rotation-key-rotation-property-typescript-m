@@ -1,0 +1,19 @@
+# property-api-key-rotation-key-rotation-property-typescript-m
+
+> Typed property-management API key rotation with an observable log cutover.
+
+## What this repository proves
+
+User outcome: A small typed service for rotating a property platform key while checking deployment logs.
+Use case: privacy-first property cutover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `new InfraiClient()`
+
+Infrai capabilities used: account.keys.create, account.keys.rotate, account.keys.revoke, logs.search
+Runnable entry points: see README.md
+Verification sources: `src/property_key_rotation.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

@@ -1,0 +1,12 @@
+{
+  "name": "property-api-key-rotation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "demo": "node --experimental-strip-types src/property_key_rotation.ts",
+    "test": "node --experimental-strip-types --test src/property_key_rotation.test.ts"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  }
+}
